@@ -1,0 +1,22 @@
+
+body { 
+    border: 2px solid black; 
+}
+
+/* Styling for the project-card element */
+project-card {
+    display: block;                /* Makes it behave like a block element */
+    border: 2px dashed blue;        /* A dashed blue border for emphasis */
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Styling for the portfolio-highlight element */
+  portfolio-highlight {
+    display: block;
+    border: 2px dotted green;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
