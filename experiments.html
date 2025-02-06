@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments – Missing Tags Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Missing Tags Showcase</h1>
+    </header>
+    <main>
+      <!-- 1. Inline Text & Formatting Elements -->
+      <section>
+        <h2>Inline Text & Formatting</h2>
+        <p>
+          This sentence uses <b>bold</b>, <i>italic</i>, <strong>strong</strong>, and <em>emphasized</em> text.
+          Here’s some inline code: <code>var x = 10;</code>
+          <br>
+          And here is preformatted text:
+        </p>
+        <pre>
+Line 1: Preformatted text
+Line 2: Continues here
+        </pre>
+        <hr>
+        <p>
+          Also, a <span style="color: red;">styled span</span> inside a paragraph.
+        </p>
+      </section>
+      
+      <!-- 2. Multimedia & Interactive Elements -->
+      <section>
+        <h2>Multimedia & Interactive</h2>
+        <p>Embedded iframe:</p>
+        <iframe src="https://ucsd.edu/" title="Example Iframe" width="200" height="100"></iframe>
+        <p>Audio example:</p>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p>Video example:</p>
+        <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Canvas example:</p>
+        <canvas id="demoCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+        <script>
+          // Minimal canvas drawing (fewer than 15 lines)
+          var canvas = document.getElementById("demoCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#00FF00";
+          ctx.fillRect(10, 10, 100, 50);
+        </script>
+        <p>SVG inline:</p>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="yellow" />
+        </svg>
+      </section>
+      
+      <!-- 3. List & Form-Related Elements -->
+      <section>
+        <h2>Lists and Form Controls</h2>
+        <p>Ordered list:</p>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+        </ol>
+        <p>Form controls using datalist, select, and option:</p>
+        <form>
+          <label for="browser">Choose a browser:</label>
+          <input list="browsers" id="browser" name="browser">
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+          </datalist>
+          <br>
+          <label for="select-example">Select an option:</label>
+          <select id="select-example">
+            <optgroup label="Group A">
+              <option>Option A1</option>
+              <option>Option A2</option>
+            </optgroup>
+            <optgroup label="Group B">
+              <option>Option B1</option>
+              <option>Option B2</option>
+            </optgroup>
+          </select>
+        </form>
+      </section>
+      
+      <!-- 4. Additional Interactive & Semantic Elements -->
+      <section>
+        <h2>Details, Dialog, and Search</h2>
+        <details>
+          <summary>Click to reveal details</summary>
+          <p>Extra information in a details element.</p>
+        </details>
+        <p>Dialog example:</p>
+        <dialog open>
+          <p>This is a dialog box.</p>
+          <button>Close</button>
+        </dialog>
+        <p>Custom search element (per requirements): <search>Search placeholder</search></p>
+      </section>
+      
+      <!-- 5. Table, Figure & Associated Elements -->
+      <section>
+        <h2>Table and Figure</h2>
+        <table border="1">
+          <caption>Sample Table Caption</caption>
+          <colgroup>
+            <col style="background-color: lightgray;">
+            <col style="background-color: lightblue;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+            </tr>
+          </tbody>
+        </table>
+        <figure>
+          <img src="https://via.placeholder.com/100" alt="Figure Image">
+          <figcaption>Figure caption for the image</figcaption>
+        </figure>
+      </section>
+      
+      <!-- 6. Structural & Semantic Grouping -->
+      <section>
+        <h2>Structural Grouping</h2>
+        <div>
+          This is a <span>div</span> element demonstrating a division.
+        </div>
+        <hgroup>
+          <h1>Heading in Hgroup</h1>
+          <h2>Subheading in Hgroup</h2>
+        </hgroup>
+        <dl>
+          <dt>Term 1</dt>
+          <dd>Description for Term 1</dd>
+          <dt>Term 2</dt>
+          <dd>Description for Term 2</dd>
+        </dl>
+      </section>
+      
+      <!-- 7. Miscellaneous Inline Semantic Elements -->
+      <section>
+        <h2>Miscellaneous Inline Elements</h2>
+        <p>
+          An abbreviation: <abbr title="Hypertext Markup Language">HTML</abbr>.
+          A definition: <dfn>Definition text</dfn>.
+          Keyboard input: <kbd>Ctrl + S</kbd>.
+        </p>
+        <p>
+          Inserted text: <ins>Newly inserted text</ins> and deleted text: <del>Old text removed</del>.
+        </p>
+        <p>
+          A blockquote:
+          <blockquote cite="https://example.com">
+            <p>Blockquoted text goes here.</p>
+          </blockquote>
+          And a citation: <cite>Example Source</cite>.
+        </p>
+      </section>
+      
+      <!-- 8. Template and Noscript -->
+      <section>
+        <h2>Template & Noscript</h2>
+        <template id="demoTemplate">
+          <p>This content is inside a template element and will not display.</p>
+        </template>
+        <noscript>
+          <p>JavaScript is disabled or not supported.</p>
+        </noscript>
+      </section>
+      
+    </main>
+    <footer>
+      <p>Experiments page footer.</p>
+    </footer>
+  </body>
+</html>
