@@ -1,22 +1,126 @@
-
-body { 
-    border: 2px solid black; 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styling for the project-card element */
-project-card {
-    display: block;                /* Makes it behave like a block element */
-    border: 2px dashed blue;        /* A dashed blue border for emphasis */
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  /* Styling for the portfolio-highlight element */
-  portfolio-highlight {
-    display: block;
-    border: 2px dotted green;
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
+/* Body and Default Typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark Mode Class */
+body.dark-mode {
+  background-color: #2b2b2b;
+  color: #fdfdfd;
+}
+
+/* Headers and Nav */
+.main-header, .navbar, .main-footer {
+  background-color: #eee;
+  padding: 1rem;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #666;
+}
+#theme-toggle {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  margin: 2rem;
+  text-align: center;
+}
+.hero-section img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+/* Main Content */
+main {
+  padding: 1.5rem;
+}
+
+/* Aside (Sidebar) */
+.sidebar {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin: 1rem;
+  border-left: 4px solid #ccc;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #ccc;
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Form Styles */
+form {
+  display: inline-block;
+  margin-top: 1rem;
+}
+label {
+  display: inline-block;
+  width: 70px;
+}
+input[type="text"], input[type="email"], textarea {
+  margin-bottom: 0.5rem;
+  width: 200px;
+  padding: 0.4rem;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .navbar, 
+.dark-mode .main-footer, 
+.dark-mode .sidebar {
+  background-color: #333;
+}
+.dark-mode .navbar a {
+  color: #fdfdfd;
+}
+.dark-mode .navbar a:hover {
+  color: #ccc;
+}
+.dark-mode input[type="text"], 
+.dark-mode input[type="email"], 
+.dark-mode textarea {
+  background-color: #444;
+  color: #fdfdfd;
+  border: 1px solid #bbb;
+}
+.dark-mode .sidebar {
+  border-left: 4px solid #666;
+}
+.dark-mode .project-card {
+  border-left: 4px solid #666;
+}
