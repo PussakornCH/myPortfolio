@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About Me - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>About Me</h1>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -18,23 +19,29 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="experiments.html">Experiments</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
       </nav>
     </header>
+
     <main>
       <section>
         <h2>My Background</h2>
         <p>
-          Hi, I'm Pussakorn Chanpanichravee. I am majoring in Computer Science, and I love exploring coding,
-          design, and innovative problem-solving.
+          Hi, I'm <strong>Pussakorn Chanpanichravee</strong>. I am majoring in Computer Science, 
+          and I love exploring coding, design, and innovative problem-solving.
         </p>
-        <h3>My Interests</h3>
+      </section>
+      <section>
+        <h2>My Interests</h2>
         <p>
-          I enjoy learning new technologies, reading technical articles, and working on creative projects.
+          I enjoy learning new technologies, reading technical articles, 
+          and working on creative projects to solve real-world problems.
         </p>
       </section>
     </main>
-    <footer>
-      <p>Pussakorn Chanpanichravee.</p>
+
+    <footer class="main-footer">
+      <p>&copy; 2025. Pussakorn Chanpanichravee.</p>
     </footer>
   </body>
 </html>
