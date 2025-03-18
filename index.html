@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Standard Meta Tags -->
-    <meta name="description" content="My personal portfolio showcasing projects, skills, and contact details of [Your Name].">
-    <meta name="keywords" content="portfolio, web developer, projects, skills, contact">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My personal portfolio showcasing projects, skills, and contact details of [Your Name]." />
+    <meta name="keywords" content="portfolio, web developer, projects, skills, contact" />
 
     <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="My Personal Portfolio">
-    <meta property="og:description" content="Explore my projects, skills, and more!">
-    <meta property="og:image" content="https://example.com/og-image.jpg">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Personal Portfolio" />
+    <meta property="og:description" content="Explore my projects, skills, and more!" />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
     <title>My Personal Portfolio</title>
-    <!-- External stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Minimal placeholder script -->
-    <script>
-      console.log("Analytics placeholder");
-    </script>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>Welcome to My Portfolio</h1>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -34,36 +32,37 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="experiments.html">Experiments</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h2>Welcome Message</h2>
+      <section class="hero-section">
+        <h2>Hello!</h2>
         <p>
-          Hello! I'm Pussakorn Chanpanichravee, a computer science student and developer.
-          Welcome to my personal portfolio site.
+          I'm <strong>Pussakorn Chanpanichravee</strong>, a computer science student and developer.
+          Welcome to my personal portfolio site!
         </p>
-        <!-- Responsive image using the picture element -->
         <picture>
           <source media="(min-width: 650px)" srcset="profile-large.jpg">
           <source media="(min-width: 465px)" srcset="profile-medium.jpg">
           <img src="profile-small.jpg" alt="Profile Image">
         </picture>
       </section>
-      <portfolio-highlight>
+
+      <section class="highlight">
+        <h3>Latest Achievements</h3>
         <p>Don't miss my latest achievements and awards!</p>
-      </portfolio-highlight>
+      </section>
     </main>
-    <aside>
-      <p>Explore my projects and skills by navigating through the menu.</p>
+
+    <aside class="sidebar">
+      <p>Feel free to explore my projects and skills using the menu above.</p>
     </aside>
-    <footer>
-      <p>Pussakorn Chanpanichravee.</p>
-      <address>
-        Email: <a href="mailto:pchanpanichravee@ucsd.edu">pchanpanichravee@ucsd.edu</a>
-      </address>
+
+    <footer class="main-footer">
+      <p>&copy; 2025. Pussakorn Chanpanichravee.</p>
+      <address>Email: <a href="mailto:pchanpanichravee@ucsd.edu">pchanpanichravee@ucsd.edu</a></address>
     </footer>
-
   </body>
-
 </html>
